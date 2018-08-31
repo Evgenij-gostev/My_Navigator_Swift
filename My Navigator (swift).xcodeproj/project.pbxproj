@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C087FA421220C1D0070F555 /* EGSamplesPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C087FA321220C1D0070F555 /* EGSamplesPlaces.swift */; };
+		8C09D796212854F60057AE6A /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C09D795212854F60057AE6A /* CLLocation.swift */; };
+		8C09D79C2128A1F40057AE6A /* EGRouteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C09D79B2128A1F40057AE6A /* EGRouteData.swift */; };
+		8C1B1B0E2131B9A3005A1323 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1B1B0D2131B9A3005A1323 /* microphone.png */; };
+		8C206B062129F98D0025ACA6 /* EGRouteInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */; };
 		8C25847821205C0000D79FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25847721205C0000D79FCA /* AppDelegate.swift */; };
-		8C25847A21205C0000D79FCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25847921205C0000D79FCA /* ViewController.swift */; };
+		8C25847A21205C0000D79FCA /* EGMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25847921205C0000D79FCA /* EGMapViewController.swift */; };
 		8C25847D21205C0000D79FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C25847B21205C0000D79FCA /* Main.storyboard */; };
 		8C25848021205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C25847E21205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld */; };
-		8C25848221205C0600D79FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C25848121205C0600D79FCA /* Assets.xcassets */; };
 		8C25848521205C0600D79FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C25848321205C0600D79FCA /* LaunchScreen.storyboard */; };
+		8C25848D2120B47800D79FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C25848C2120B47800D79FCA /* Assets.xcassets */; };
+		8C2584902120C2E000D79FCA /* EGFetcherSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25848F2120C2E000D79FCA /* EGFetcherSampleViewController.swift */; };
+		8C532C6B212F23A600BE73EF /* EGAdressLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */; };
+		8C619F6921233D4000AF834E /* EGMarkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C619F6821233D4000AF834E /* EGMarkers.swift */; };
+		8C619F6D2123535500AF834E /* EGServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C619F6C2123535500AF834E /* EGServerManager.swift */; };
+		FAFFCD8EBE6795A6DF00CA30 /* Pods_My_Navigator__swift_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A80F0DE01984A2163CF7F /* Pods_My_Navigator__swift_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AA8321729432868C355DDA0 /* Pods-My Navigator (swift).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Navigator (swift).debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Navigator (swift)/Pods-My Navigator (swift).debug.xcconfig"; sourceTree = "<group>"; };
+		8C087FA321220C1D0070F555 /* EGSamplesPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGSamplesPlaces.swift; sourceTree = "<group>"; };
+		8C09D795212854F60057AE6A /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
+		8C09D79B2128A1F40057AE6A /* EGRouteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGRouteData.swift; sourceTree = "<group>"; };
+		8C1B1B0D2131B9A3005A1323 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGRouteInformation.swift; sourceTree = "<group>"; };
 		8C25847421205C0000D79FCA /* My Navigator (swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Navigator (swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C25847721205C0000D79FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C25847921205C0000D79FCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C25847921205C0000D79FCA /* EGMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapViewController.swift; sourceTree = "<group>"; };
 		8C25847C21205C0000D79FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C25847F21205C0000D79FCA /* My_Navigator__swift_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Navigator__swift_.xcdatamodel; sourceTree = "<group>"; };
-		8C25848121205C0600D79FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C25848421205C0600D79FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C25848621205C0600D79FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C25848C2120B47800D79FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C25848F2120C2E000D79FCA /* EGFetcherSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGFetcherSampleViewController.swift; sourceTree = "<group>"; };
+		8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGAdressLocation.swift; sourceTree = "<group>"; };
+		8C619F6821233D4000AF834E /* EGMarkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMarkers.swift; sourceTree = "<group>"; };
+		8C619F6C2123535500AF834E /* EGServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGServerManager.swift; sourceTree = "<group>"; };
+		965C220A3F338E052BD13B06 /* Pods-My Navigator (swift).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Navigator (swift).release.xcconfig"; path = "Pods/Target Support Files/Pods-My Navigator (swift)/Pods-My Navigator (swift).release.xcconfig"; sourceTree = "<group>"; };
+		B06A80F0DE01984A2163CF7F /* Pods_My_Navigator__swift_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Navigator__swift_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFFCD8EBE6795A6DF00CA30 /* Pods_My_Navigator__swift_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40FB62365541376EC178170F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AA8321729432868C355DDA0 /* Pods-My Navigator (swift).debug.xcconfig */,
+				965C220A3F338E052BD13B06 /* Pods-My Navigator (swift).release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8C25846B21205C0000D79FCA = {
 			isa = PBXGroup;
 			children = (
 				8C25847621205C0000D79FCA /* My Navigator (swift) */,
 				8C25847521205C0000D79FCA /* Products */,
+				40FB62365541376EC178170F /* Pods */,
+				E80FB7F32127E2B44593866D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +91,39 @@
 			isa = PBXGroup;
 			children = (
 				8C25847721205C0000D79FCA /* AppDelegate.swift */,
-				8C25847921205C0000D79FCA /* ViewController.swift */,
+				8C25847921205C0000D79FCA /* EGMapViewController.swift */,
+				8C25848F2120C2E000D79FCA /* EGFetcherSampleViewController.swift */,
+				8C087FA321220C1D0070F555 /* EGSamplesPlaces.swift */,
+				8C619F6821233D4000AF834E /* EGMarkers.swift */,
 				8C25847B21205C0000D79FCA /* Main.storyboard */,
-				8C25848121205C0600D79FCA /* Assets.xcassets */,
 				8C25848321205C0600D79FCA /* LaunchScreen.storyboard */,
+				8C25848C2120B47800D79FCA /* Assets.xcassets */,
 				8C25848621205C0600D79FCA /* Info.plist */,
+				8C25848E2120B48500D79FCA /* Image */,
 				8C25847E21205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld */,
+				8C619F6C2123535500AF834E /* EGServerManager.swift */,
+				8C09D795212854F60057AE6A /* CLLocation.swift */,
+				8C09D79B2128A1F40057AE6A /* EGRouteData.swift */,
+				8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */,
+				8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */,
 			);
 			path = "My Navigator (swift)";
+			sourceTree = "<group>";
+		};
+		8C25848E2120B48500D79FCA /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				8C1B1B0D2131B9A3005A1323 /* microphone.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		E80FB7F32127E2B44593866D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B06A80F0DE01984A2163CF7F /* Pods_My_Navigator__swift_.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C25848921205C0600D79FCA /* Build configuration list for PBXNativeTarget "My Navigator (swift)" */;
 			buildPhases = (
+				F42B3D616C085B744308625E /* [CP] Check Pods Manifest.lock */,
 				8C25847021205C0000D79FCA /* Sources */,
 				8C25847121205C0000D79FCA /* Frameworks */,
 				8C25847221205C0000D79FCA /* Resources */,
+				641B306BFA185A15CDE34AF3 /* [CP] Embed Pods Frameworks */,
+				76BC6F3887308AE0D73646C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -93,6 +155,7 @@
 		8C25846C21205C0000D79FCA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = EG;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Evgenij Gostev";
@@ -126,20 +189,90 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C25848521205C0600D79FCA /* LaunchScreen.storyboard in Resources */,
-				8C25848221205C0600D79FCA /* Assets.xcassets in Resources */,
+				8C1B1B0E2131B9A3005A1323 /* microphone.png in Resources */,
+				8C25848D2120B47800D79FCA /* Assets.xcassets in Resources */,
 				8C25847D21205C0000D79FCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		641B306BFA185A15CDE34AF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-My Navigator (swift)/Pods-My Navigator (swift)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Navigator (swift)/Pods-My Navigator (swift)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76BC6F3887308AE0D73646C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-My Navigator (swift)/Pods-My Navigator (swift)-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Navigator (swift)/Pods-My Navigator (swift)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42B3D616C085B744308625E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Navigator (swift)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C25847021205C0000D79FCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C09D796212854F60057AE6A /* CLLocation.swift in Sources */,
+				8C2584902120C2E000D79FCA /* EGFetcherSampleViewController.swift in Sources */,
 				8C25848021205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld in Sources */,
-				8C25847A21205C0000D79FCA /* ViewController.swift in Sources */,
+				8C25847A21205C0000D79FCA /* EGMapViewController.swift in Sources */,
+				8C619F6921233D4000AF834E /* EGMarkers.swift in Sources */,
+				8C206B062129F98D0025ACA6 /* EGRouteInformation.swift in Sources */,
+				8C09D79C2128A1F40057AE6A /* EGRouteData.swift in Sources */,
+				8C087FA421220C1D0070F555 /* EGSamplesPlaces.swift in Sources */,
+				8C532C6B212F23A600BE73EF /* EGAdressLocation.swift in Sources */,
+				8C619F6D2123535500AF834E /* EGServerManager.swift in Sources */,
 				8C25847821205C0000D79FCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,10 +415,13 @@
 		};
 		8C25848A21205C0600D79FCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA8321729432868C355DDA0 /* Pods-My Navigator (swift).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "My Navigator (swift)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +435,13 @@
 		};
 		8C25848B21205C0600D79FCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965C220A3F338E052BD13B06 /* Pods-My Navigator (swift).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "My Navigator (swift)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
