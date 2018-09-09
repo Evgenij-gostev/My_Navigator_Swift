@@ -41,7 +41,7 @@ class EGMarkers {
       let arrayString = place?.formattedAddress?.components(separatedBy: ", ")
       var address = ""
       for string in arrayString! {
-        address += "\(string) \n"
+        address += "\(string), \n"
       }
       _marker?.snippet = address
     }
@@ -51,7 +51,9 @@ class EGMarkers {
     _marker = GMSMarker.init(position: coordinate)
     EGServerManager.shared.getAddressForCoordinate(coordinate,
        onSuccess: { (address) in
-        self._marker?.snippet = address
+        DispatchQueue.main.async {
+          self._marker?.snippet = address
+        }
     }) { (error) in
       print("ERROR: \(error)")
     }
