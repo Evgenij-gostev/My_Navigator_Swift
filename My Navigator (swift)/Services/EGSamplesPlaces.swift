@@ -14,11 +14,10 @@ class EGSamplesPlaces: NSObject {
 
   static let shared = EGSamplesPlaces()
 
+  var delegateCall = DelegatedCall<[GMSPlace]>()
   private var _fetcher: GMSAutocompleteFetcher?
-  private var _arrayPlace = [GMSPlace]()
-  private var _predictions = [GMSAutocompletePrediction]()
-  
-  
+
+
   private override init() {
     super.init()
     let filter = GMSAutocompleteFilter()
@@ -32,11 +31,6 @@ class EGSamplesPlaces: NSObject {
   func setRequest(_ request: String) {
     _fetcher?.sourceTextHasChanged(request)
   }
-  
-  func getSamplesPlaces() -> [GMSPlace] {
-    return _arrayPlace
-  }
-  
 }
 
 // MARK: - GMSAutocompleteFetcherDelegate
@@ -44,15 +38,15 @@ class EGSamplesPlaces: NSObject {
 extension EGSamplesPlaces: GMSAutocompleteFetcherDelegate {
   
   func didAutocomplete(with predictions: [GMSAutocompletePrediction]) {
-    _arrayPlace.removeAll()
-
+    var arrayPlace = [GMSPlace]()
     for prediction in predictions {
       GMSPlacesClient.shared().lookUpPlaceID(prediction.placeID!) { (place, error) in
         if let error = error {
           print("Place Details error \(error.localizedDescription)")
         }
         if let place = place {
-          self._arrayPlace.append(place)
+          arrayPlace.append(place)
+          self.delegateCall.callback?(arrayPlace)
         } else {
           print("No place details for \(prediction.placeID!)")
         }
@@ -63,7 +57,6 @@ extension EGSamplesPlaces: GMSAutocompleteFetcherDelegate {
   func didFailAutocompleteWithError(_ error: Error) {
     print("ERROR: \(error.localizedDescription)")
   }
-  
 }
 
 

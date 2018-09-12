@@ -16,6 +16,6 @@ protocol EGMapPresenterProtocol: class {
   func buildRoute()
   func cancelRoute()
   func choiceOfLocation(_ coordinate: CLLocationCoordinate2D)
-  func showSimpleAlertWithMessege(_ message: String, isOneButton: Bool)
+  func showSimpleAlert(withMessege message: String, isOneButton: Bool)
   func startLocationSettingViewController(withLocationType locationType: EGLocationType)
 }

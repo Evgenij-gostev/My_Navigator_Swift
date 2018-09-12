@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol EGLocationSettingConfiguratorProtocol: class {
+  func configure(with viewController: EGLocationSettingViewController)
+}

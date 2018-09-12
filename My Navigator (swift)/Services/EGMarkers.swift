@@ -10,29 +10,27 @@ import Foundation
 import GoogleMaps
 import GooglePlaces
 
+
 class EGMarkers {
   
-  private var _marker: GMSMarker? = nil
-  
-  
-  init(withPlace place: GMSPlace?,
-                     andMyLocation myLocation:CLLocationCoordinate2D) {
-    createMarkerFromPlace(place, andMyLocation: myLocation)
-  }
-  
-  init(withCoordinate coordinate: CLLocationCoordinate2D) {
-    createMarkerFromCoordinate(coordinate)
+  private var _marker: GMSMarker?
+
+  init(withPlace place: GMSPlace?, andMyLocation myLocation:CLLocationCoordinate2D) {
+    createMarker(fromPlace: place, andMyLocation: myLocation)
   }
 
-  
+  init(withCoordinate coordinate: CLLocationCoordinate2D) {
+    createMarker(fromCoordinate: coordinate)
+  }
+
   func getMarker() -> GMSMarker {
     return _marker!
   }
 
-  
 // MARK: - Private Metods
   
-  private func createMarkerFromPlace(_ place: GMSPlace?, andMyLocation myLocation: CLLocationCoordinate2D) {
+  func createMarker(fromPlace place: GMSPlace?,
+           andMyLocation myLocation: CLLocationCoordinate2D) {
     if place == nil && myLocation.latitude != 0 {
       _marker = GMSMarker.init(position: myLocation)
       _marker?.snippet = "Мое местоположение"
@@ -47,9 +45,9 @@ class EGMarkers {
     }
   }
   
-  private func createMarkerFromCoordinate(_ coordinate: CLLocationCoordinate2D) {
+  func createMarker(fromCoordinate coordinate: CLLocationCoordinate2D) {
     _marker = GMSMarker.init(position: coordinate)
-    EGServerManager.shared.getAddressForCoordinate(coordinate,
+    EGServerManager.shared.getAddress(forCoordinate: coordinate,
        onSuccess: { (address) in
         DispatchQueue.main.async {
           self._marker?.snippet = address
@@ -58,7 +56,5 @@ class EGMarkers {
       print("ERROR: \(error)")
     }
   }
-  
- 
 }
 

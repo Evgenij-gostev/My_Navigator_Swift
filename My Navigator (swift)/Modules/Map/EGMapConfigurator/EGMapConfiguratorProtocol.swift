@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol EGMapConfiguratorProtocol: class {
+  func configure(with viewController: EGMapViewController)
+}

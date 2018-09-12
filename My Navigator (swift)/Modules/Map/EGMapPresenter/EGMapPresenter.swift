@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMaps
 
+
 class EGMapPresenter: EGMapPresenterProtocol {
   
   var interactor: EGMapInteractorProtocol!
@@ -55,7 +56,7 @@ class EGMapPresenter: EGMapPresenterProtocol {
     router.presentController(alert)
   }
   
-  func showSimpleAlertWithMessege(_ message: String, isOneButton: Bool) {
+  func showSimpleAlert(withMessege message: String, isOneButton: Bool) {
     let alert = UIAlertController(title: nil,
                                   message: message,
                                   preferredStyle: .actionSheet)
@@ -82,5 +83,4 @@ class EGMapPresenter: EGMapPresenterProtocol {
     router.presentController(locationSettingVC)
     locationSettingVC.delegate = interactor.self as? EGLocationSettingViewControllerDelegate
   }
-  
 }

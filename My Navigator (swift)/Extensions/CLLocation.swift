@@ -11,7 +11,7 @@ import GoogleMaps
 
 extension CLLocation {
   
-  static func EGCLLocationNoNullCoordinate(location: CLLocationCoordinate2D?) -> Bool {
+  static func EGLocationNoNullCoordinate(location: CLLocationCoordinate2D?) -> Bool {
     if let location = location {
       if location.latitude != 0 && location.longitude != 0 {
         return true

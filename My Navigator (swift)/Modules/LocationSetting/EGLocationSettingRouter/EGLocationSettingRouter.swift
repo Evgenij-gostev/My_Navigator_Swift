@@ -20,13 +20,11 @@ class EGLocationSettingRouter: EGLocationSettingRouterProtocol {
   
   func configureView() {
     viewController.tableView.layer.cornerRadius = 5
-
     viewController.speechView.layer.cornerRadius = 5
     viewController.speechView.layer.shadowColor = UIColor.black.cgColor
     viewController.speechView.layer.shadowOffset = CGSize(width: 3, height: 3)
     viewController.speechView.layer.shadowOpacity = 0.7
     viewController.speechView.layer.shadowRadius = 4.0
-
     hideSpeechView()
   }
   
@@ -58,8 +56,8 @@ class EGLocationSettingRouter: EGLocationSettingRouterProtocol {
     viewController.tableView.reloadData()
   }
   
-  func autocompleteWithMarker(_ marker: GMSMarker) {
-    viewController.delegate?.autocompleteWithMarker(marker, andLocationType: viewController.locationType!)
+  func autocomplete(withMarker marker: GMSMarker) {
+    viewController.delegate?.autocomplete(withMarker: marker, andLocationType: viewController.locationType!)
   }
   
 }

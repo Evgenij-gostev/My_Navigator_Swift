@@ -10,13 +10,6 @@ import Foundation
 import GoogleMaps
 import GooglePlaces
 
-
-
-
-
-
-
-
 protocol EGLocationSettingRouterProtocol: class {
   func configureView()
   func showSpeechView()
@@ -26,11 +19,11 @@ protocol EGLocationSettingRouterProtocol: class {
   func setSearchTextField(_ text: String)
   func setArrayPlace(_ arrayPlace: [GMSPlace])
   func reloadDataTableView()
-  func autocompleteWithMarker(_ marker: GMSMarker)
+  func autocomplete(withMarker marker: GMSMarker)
 }
 
 // Mark: - Delegates
 
 protocol EGLocationSettingViewControllerDelegate: class {
-  func autocompleteWithMarker(_ marker: GMSMarker, andLocationType locationType: EGLocationType)
+  func autocomplete(withMarker marker: GMSMarker, andLocationType locationType: EGLocationType)
 }

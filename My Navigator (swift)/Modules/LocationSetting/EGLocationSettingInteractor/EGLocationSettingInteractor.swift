@@ -11,10 +11,10 @@ import GoogleMaps
 import GooglePlaces
 import Speech
 
+
 class EGLocationSettingInteractor: EGLocationSettingInteractorProtocol {
   
   weak var presenter: EGLocationSettingPresenterProtocol!
-  weak var delegate: EGLocationSettingViewControllerDelegate?
   private let _samplesPlaces = EGSamplesPlaces.shared
   private var _arrayPlace = [GMSPlace]()
   private let _audioEngine = AVAudioEngine()
@@ -26,6 +26,7 @@ class EGLocationSettingInteractor: EGLocationSettingInteractorProtocol {
   
   required init(presenter: EGLocationSettingPresenterProtocol) {
     self.presenter = presenter
+    loadSamplesPlaces()
   }
   
   func startRecognitionText() {
@@ -35,7 +36,7 @@ class EGLocationSettingInteractor: EGLocationSettingInteractorProtocol {
       self.stopRecognizingText()
       if let address = self._recognizedText {
         self.presenter.router.setSearchTextField(address)
-        self.searchForPlaceByAddress(address)
+        self.searchForPlace(byAddress: address)
       }
       self.presenter.router.hideSpeechView()
     }
@@ -47,39 +48,35 @@ class EGLocationSettingInteractor: EGLocationSettingInteractorProtocol {
     _recognitionTask?.cancel()
   }
   
-  func searchForPlaceByAddress(_ address: String) {
+  func searchForPlace(byAddress address: String) {
     _samplesPlaces.setRequest(address)
-//    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-    _arrayPlace = _samplesPlaces.getSamplesPlaces()
-    presenter.router.setArrayPlace(_arrayPlace)
-    presenter.router.reloadDataTableView()
-//    }
   }
   
-  func selectMarkerByIndexPath(_ indexPath: IndexPath,
+  func selectMarker(byIndexPath indexPath: IndexPath,
                                myLocation: CLLocationCoordinate2D?) {
     var place: GMSPlace? = nil
     if CLLocation.EGLocationNoNullCoordinate(location: myLocation)
       && indexPath.section != 0 {
       place = _arrayPlace[indexPath.row]
     }
-    createMarkerFromPlace(place, myLocation: myLocation!)
+    createMarker(fromPlace: place, myLocation: myLocation!)
     presenter.router.closeSettingViewController()
   }
   
   // MARK: - Private Metods
   
-  private func createMarkerFromPlace(_ place: GMSPlace?,
-                                     myLocation: CLLocationCoordinate2D) {
+  private func createMarker(fromPlace place: GMSPlace?,
+                                  myLocation: CLLocationCoordinate2D) {
     let markers = EGMarkers.init(withPlace: place, andMyLocation: myLocation)
     let marker: GMSMarker = markers.getMarker()
-    presenter.router.autocompleteWithMarker(marker)
+    presenter.router.autocomplete(withMarker: marker)
   }
   
   private func startRecognition() {
     let node = _audioEngine.inputNode
     let recognitionFormat = node.outputFormat(forBus: 0)
-    node.installTap(onBus: 0, bufferSize: 1024, format: recognitionFormat) { [unowned self](buffer, audioTime) in
+    node.installTap(onBus: 0, bufferSize: 1024, format: recognitionFormat) {
+      [unowned self](buffer, audioTime) in
       self._request.append(buffer)
     }
     _audioEngine.prepare()
@@ -89,7 +86,9 @@ class EGLocationSettingInteractor: EGLocationSettingInteractorProtocol {
       print("\(error.localizedDescription)")
       return
     }
-    _recognitionTask = _speechRecognizer?.recognitionTask(with: _request, resultHandler: { [unowned self](result, error) in
+    _recognitionTask = _speechRecognizer?.recognitionTask(with: _request,
+                                                 resultHandler: {
+      [unowned self](result, error) in
       if let result = result {
         DispatchQueue.main.async {
           [unowned self] in
@@ -107,4 +106,13 @@ class EGLocationSettingInteractor: EGLocationSettingInteractorProtocol {
     })
   }
   
+  // MARK: - EGSamplesPlacesDelegate
+  
+  private func loadSamplesPlaces() {
+    _samplesPlaces.delegateCall.delegate(to: self) { (self, plases) in
+      self._arrayPlace = plases
+      self.presenter.router.setArrayPlace(self._arrayPlace)
+      self.presenter.router.reloadDataTableView()
+    }
+  }
 }

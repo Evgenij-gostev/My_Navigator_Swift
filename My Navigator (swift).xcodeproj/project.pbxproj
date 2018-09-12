@@ -7,31 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C0558BD2141A84200FEEC8B /* EGMapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0558BC2141A84200FEEC8B /* EGMapConfigurator.swift */; };
 		8C087FA421220C1D0070F555 /* EGSamplesPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C087FA321220C1D0070F555 /* EGSamplesPlaces.swift */; };
+		8C08C7EB213EF50700F61B6A /* EGLocationSettingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C7EA213EF50700F61B6A /* EGLocationSettingConfigurator.swift */; };
 		8C09D796212854F60057AE6A /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C09D795212854F60057AE6A /* CLLocation.swift */; };
 		8C09D79C2128A1F40057AE6A /* EGRouteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C09D79B2128A1F40057AE6A /* EGRouteData.swift */; };
-		8C1B1B0E2131B9A3005A1323 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1B1B0D2131B9A3005A1323 /* microphone.png */; };
+		8C10C4212146FEB3009EDB8A /* DelegatedCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10C4202146FEB3009EDB8A /* DelegatedCall.swift */; };
 		8C206B062129F98D0025ACA6 /* EGRouteInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */; };
+		8C210FAE21445B5500834F21 /* EGMapPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C210FAD21445B5500834F21 /* EGMapPresenterProtocol.swift */; };
+		8C210FB221445C0A00834F21 /* EGMapInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C210FB121445C0A00834F21 /* EGMapInteractorProtocol.swift */; };
+		8C210FB521445C6300834F21 /* EGMapConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C210FB421445C6300834F21 /* EGMapConfiguratorProtocol.swift */; };
+		8C210FBA21445D7000834F21 /* EGLocationSettingPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C210FB921445D7000834F21 /* EGLocationSettingPresenterProtocol.swift */; };
+		8C210FBD21445DBC00834F21 /* EGLocationSettingInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C210FBC21445DBC00834F21 /* EGLocationSettingInteractorProtocol.swift */; };
+		8C210FC021445E0D00834F21 /* EGLocationSettingConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C210FBF21445E0D00834F21 /* EGLocationSettingConfiguratorProtocol.swift */; };
 		8C25847821205C0000D79FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25847721205C0000D79FCA /* AppDelegate.swift */; };
 		8C25847A21205C0000D79FCA /* EGMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25847921205C0000D79FCA /* EGMapViewController.swift */; };
 		8C25847D21205C0000D79FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C25847B21205C0000D79FCA /* Main.storyboard */; };
 		8C25848021205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C25847E21205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld */; };
 		8C25848521205C0600D79FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C25848321205C0600D79FCA /* LaunchScreen.storyboard */; };
 		8C25848D2120B47800D79FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C25848C2120B47800D79FCA /* Assets.xcassets */; };
-		8C2584902120C2E000D79FCA /* EGFetcherSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25848F2120C2E000D79FCA /* EGFetcherSampleViewController.swift */; };
+		8C2584902120C2E000D79FCA /* EGLocationSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25848F2120C2E000D79FCA /* EGLocationSettingViewController.swift */; };
 		8C532C6B212F23A600BE73EF /* EGAdressLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */; };
 		8C619F6921233D4000AF834E /* EGMarkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C619F6821233D4000AF834E /* EGMarkers.swift */; };
 		8C619F6D2123535500AF834E /* EGServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C619F6C2123535500AF834E /* EGServerManager.swift */; };
+		8C733C80213C7040002B47F7 /* EGMapRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C733C7F213C7040002B47F7 /* EGMapRouterProtocol.swift */; };
+		8C733C82213C705C002B47F7 /* EGMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C733C81213C705C002B47F7 /* EGMapRouter.swift */; };
+		8C733C84213C707A002B47F7 /* EGMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C733C83213C707A002B47F7 /* EGMapInteractor.swift */; };
+		8C733C86213C708C002B47F7 /* EGMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C733C85213C708C002B47F7 /* EGMapPresenter.swift */; };
+		8C733C88213C70EF002B47F7 /* EGLocationSettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C733C87213C70EF002B47F7 /* EGLocationSettingPresenter.swift */; };
+		8C733C8A213C7101002B47F7 /* EGLocationSettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C733C89213C7101002B47F7 /* EGLocationSettingInteractor.swift */; };
+		8C733C8C213C7110002B47F7 /* EGLocationSettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C733C8B213C7110002B47F7 /* EGLocationSettingRouter.swift */; };
+		8C733C8E213C712B002B47F7 /* EGLocationSettingRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C733C8D213C712B002B47F7 /* EGLocationSettingRouterProtocol.swift */; };
 		FAFFCD8EBE6795A6DF00CA30 /* Pods_My_Navigator__swift_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A80F0DE01984A2163CF7F /* Pods_My_Navigator__swift_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AA8321729432868C355DDA0 /* Pods-My Navigator (swift).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Navigator (swift).debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Navigator (swift)/Pods-My Navigator (swift).debug.xcconfig"; sourceTree = "<group>"; };
+		8C0558BC2141A84200FEEC8B /* EGMapConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapConfigurator.swift; sourceTree = "<group>"; };
 		8C087FA321220C1D0070F555 /* EGSamplesPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGSamplesPlaces.swift; sourceTree = "<group>"; };
+		8C08C7EA213EF50700F61B6A /* EGLocationSettingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingConfigurator.swift; sourceTree = "<group>"; };
 		8C09D795212854F60057AE6A /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
 		8C09D79B2128A1F40057AE6A /* EGRouteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGRouteData.swift; sourceTree = "<group>"; };
-		8C1B1B0D2131B9A3005A1323 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		8C10C4202146FEB3009EDB8A /* DelegatedCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatedCall.swift; sourceTree = "<group>"; };
 		8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGRouteInformation.swift; sourceTree = "<group>"; };
+		8C210FAD21445B5500834F21 /* EGMapPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapPresenterProtocol.swift; sourceTree = "<group>"; };
+		8C210FB121445C0A00834F21 /* EGMapInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapInteractorProtocol.swift; sourceTree = "<group>"; };
+		8C210FB421445C6300834F21 /* EGMapConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		8C210FB921445D7000834F21 /* EGLocationSettingPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingPresenterProtocol.swift; sourceTree = "<group>"; };
+		8C210FBC21445DBC00834F21 /* EGLocationSettingInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingInteractorProtocol.swift; sourceTree = "<group>"; };
+		8C210FBF21445E0D00834F21 /* EGLocationSettingConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		8C25847421205C0000D79FCA /* My Navigator (swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Navigator (swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C25847721205C0000D79FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C25847921205C0000D79FCA /* EGMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapViewController.swift; sourceTree = "<group>"; };
@@ -40,10 +64,18 @@
 		8C25848421205C0600D79FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C25848621205C0600D79FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C25848C2120B47800D79FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8C25848F2120C2E000D79FCA /* EGFetcherSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGFetcherSampleViewController.swift; sourceTree = "<group>"; };
+		8C25848F2120C2E000D79FCA /* EGLocationSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingViewController.swift; sourceTree = "<group>"; };
 		8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGAdressLocation.swift; sourceTree = "<group>"; };
 		8C619F6821233D4000AF834E /* EGMarkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMarkers.swift; sourceTree = "<group>"; };
 		8C619F6C2123535500AF834E /* EGServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGServerManager.swift; sourceTree = "<group>"; };
+		8C733C7F213C7040002B47F7 /* EGMapRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapRouterProtocol.swift; sourceTree = "<group>"; };
+		8C733C81213C705C002B47F7 /* EGMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapRouter.swift; sourceTree = "<group>"; };
+		8C733C83213C707A002B47F7 /* EGMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapInteractor.swift; sourceTree = "<group>"; };
+		8C733C85213C708C002B47F7 /* EGMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapPresenter.swift; sourceTree = "<group>"; };
+		8C733C87213C70EF002B47F7 /* EGLocationSettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingPresenter.swift; sourceTree = "<group>"; };
+		8C733C89213C7101002B47F7 /* EGLocationSettingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingInteractor.swift; sourceTree = "<group>"; };
+		8C733C8B213C7110002B47F7 /* EGLocationSettingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingRouter.swift; sourceTree = "<group>"; };
+		8C733C8D213C712B002B47F7 /* EGLocationSettingRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingRouterProtocol.swift; sourceTree = "<group>"; };
 		965C220A3F338E052BD13B06 /* Pods-My Navigator (swift).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Navigator (swift).release.xcconfig"; path = "Pods/Target Support Files/Pods-My Navigator (swift)/Pods-My Navigator (swift).release.xcconfig"; sourceTree = "<group>"; };
 		B06A80F0DE01984A2163CF7F /* Pods_My_Navigator__swift_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Navigator__swift_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +101,94 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8C210FAC21445B1D00834F21 /* EGMapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C25847921205C0000D79FCA /* EGMapViewController.swift */,
+			);
+			path = EGMapViewController;
+			sourceTree = "<group>";
+		};
+		8C210FAF21445BAA00834F21 /* EGMapPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C210FAD21445B5500834F21 /* EGMapPresenterProtocol.swift */,
+				8C733C85213C708C002B47F7 /* EGMapPresenter.swift */,
+			);
+			path = EGMapPresenter;
+			sourceTree = "<group>";
+		};
+		8C210FB021445BCE00834F21 /* EGMapInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				8C210FB121445C0A00834F21 /* EGMapInteractorProtocol.swift */,
+				8C733C83213C707A002B47F7 /* EGMapInteractor.swift */,
+			);
+			path = EGMapInteractor;
+			sourceTree = "<group>";
+		};
+		8C210FB321445C3D00834F21 /* EGMapConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				8C210FB421445C6300834F21 /* EGMapConfiguratorProtocol.swift */,
+				8C0558BC2141A84200FEEC8B /* EGMapConfigurator.swift */,
+			);
+			path = EGMapConfigurator;
+			sourceTree = "<group>";
+		};
+		8C210FB621445C8500834F21 /* EGMapRouter */ = {
+			isa = PBXGroup;
+			children = (
+				8C733C7F213C7040002B47F7 /* EGMapRouterProtocol.swift */,
+				8C733C81213C705C002B47F7 /* EGMapRouter.swift */,
+			);
+			path = EGMapRouter;
+			sourceTree = "<group>";
+		};
+		8C210FB721445D4200834F21 /* EGLocationSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C25848F2120C2E000D79FCA /* EGLocationSettingViewController.swift */,
+			);
+			path = EGLocationSettingViewController;
+			sourceTree = "<group>";
+		};
+		8C210FB821445D5600834F21 /* EGLocationSettingPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C210FB921445D7000834F21 /* EGLocationSettingPresenterProtocol.swift */,
+				8C733C87213C70EF002B47F7 /* EGLocationSettingPresenter.swift */,
+			);
+			path = EGLocationSettingPresenter;
+			sourceTree = "<group>";
+		};
+		8C210FBB21445DA800834F21 /* EGLocationSettingInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				8C210FBC21445DBC00834F21 /* EGLocationSettingInteractorProtocol.swift */,
+				8C733C89213C7101002B47F7 /* EGLocationSettingInteractor.swift */,
+			);
+			path = EGLocationSettingInteractor;
+			sourceTree = "<group>";
+		};
+		8C210FBE21445DF400834F21 /* EGLocationSettingConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				8C210FBF21445E0D00834F21 /* EGLocationSettingConfiguratorProtocol.swift */,
+				8C08C7EA213EF50700F61B6A /* EGLocationSettingConfigurator.swift */,
+			);
+			path = EGLocationSettingConfigurator;
+			sourceTree = "<group>";
+		};
+		8C210FC121445E2900834F21 /* EGLocationSettingRouter */ = {
+			isa = PBXGroup;
+			children = (
+				8C733C8D213C712B002B47F7 /* EGLocationSettingRouterProtocol.swift */,
+				8C733C8B213C7110002B47F7 /* EGLocationSettingRouter.swift */,
+			);
+			path = EGLocationSettingRouter;
+			sourceTree = "<group>";
+		};
 		8C25846B21205C0000D79FCA = {
 			isa = PBXGroup;
 			children = (
@@ -91,31 +211,87 @@
 			isa = PBXGroup;
 			children = (
 				8C25847721205C0000D79FCA /* AppDelegate.swift */,
-				8C25847921205C0000D79FCA /* EGMapViewController.swift */,
-				8C25848F2120C2E000D79FCA /* EGFetcherSampleViewController.swift */,
-				8C087FA321220C1D0070F555 /* EGSamplesPlaces.swift */,
-				8C619F6821233D4000AF834E /* EGMarkers.swift */,
-				8C25847B21205C0000D79FCA /* Main.storyboard */,
-				8C25848321205C0600D79FCA /* LaunchScreen.storyboard */,
+				8C69170B213DCB1B004D3A4F /* Modules */,
+				8C69170A213DCAC5004D3A4F /* Entities */,
+				8C69170C213DCBCA004D3A4F /* Services */,
+				8C691709213DC9E1004D3A4F /* Extensions */,
+				8C733C7E213C6F3A002B47F7 /* Storyboards */,
 				8C25848C2120B47800D79FCA /* Assets.xcassets */,
 				8C25848621205C0600D79FCA /* Info.plist */,
-				8C25848E2120B48500D79FCA /* Image */,
 				8C25847E21205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld */,
-				8C619F6C2123535500AF834E /* EGServerManager.swift */,
-				8C09D795212854F60057AE6A /* CLLocation.swift */,
-				8C09D79B2128A1F40057AE6A /* EGRouteData.swift */,
-				8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */,
-				8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */,
 			);
 			path = "My Navigator (swift)";
 			sourceTree = "<group>";
 		};
-		8C25848E2120B48500D79FCA /* Image */ = {
+		8C691709213DC9E1004D3A4F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8C1B1B0D2131B9A3005A1323 /* microphone.png */,
+				8C09D795212854F60057AE6A /* CLLocation.swift */,
 			);
-			path = Image;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C69170A213DCAC5004D3A4F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */,
+				8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8C69170B213DCB1B004D3A4F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8C733C7C213C6D2E002B47F7 /* Map */,
+				8C733C7D213C6ECC002B47F7 /* LocationSetting */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8C69170C213DCBCA004D3A4F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8C10C4202146FEB3009EDB8A /* DelegatedCall.swift */,
+				8C619F6C2123535500AF834E /* EGServerManager.swift */,
+				8C619F6821233D4000AF834E /* EGMarkers.swift */,
+				8C09D79B2128A1F40057AE6A /* EGRouteData.swift */,
+				8C087FA321220C1D0070F555 /* EGSamplesPlaces.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8C733C7C213C6D2E002B47F7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8C210FAC21445B1D00834F21 /* EGMapViewController */,
+				8C210FAF21445BAA00834F21 /* EGMapPresenter */,
+				8C210FB021445BCE00834F21 /* EGMapInteractor */,
+				8C210FB321445C3D00834F21 /* EGMapConfigurator */,
+				8C210FB621445C8500834F21 /* EGMapRouter */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8C733C7D213C6ECC002B47F7 /* LocationSetting */ = {
+			isa = PBXGroup;
+			children = (
+				8C210FB721445D4200834F21 /* EGLocationSettingViewController */,
+				8C210FB821445D5600834F21 /* EGLocationSettingPresenter */,
+				8C210FBB21445DA800834F21 /* EGLocationSettingInteractor */,
+				8C210FBE21445DF400834F21 /* EGLocationSettingConfigurator */,
+				8C210FC121445E2900834F21 /* EGLocationSettingRouter */,
+			);
+			path = LocationSetting;
+			sourceTree = "<group>";
+		};
+		8C733C7E213C6F3A002B47F7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8C25847B21205C0000D79FCA /* Main.storyboard */,
+				8C25848321205C0600D79FCA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E80FB7F32127E2B44593866D /* Frameworks */ = {
@@ -189,7 +365,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C25848521205C0600D79FCA /* LaunchScreen.storyboard in Resources */,
-				8C1B1B0E2131B9A3005A1323 /* microphone.png in Resources */,
 				8C25848D2120B47800D79FCA /* Assets.xcassets in Resources */,
 				8C25847D21205C0000D79FCA /* Main.storyboard in Resources */,
 			);
@@ -263,16 +438,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C08C7EB213EF50700F61B6A /* EGLocationSettingConfigurator.swift in Sources */,
+				8C733C8E213C712B002B47F7 /* EGLocationSettingRouterProtocol.swift in Sources */,
 				8C09D796212854F60057AE6A /* CLLocation.swift in Sources */,
-				8C2584902120C2E000D79FCA /* EGFetcherSampleViewController.swift in Sources */,
+				8C2584902120C2E000D79FCA /* EGLocationSettingViewController.swift in Sources */,
+				8C733C82213C705C002B47F7 /* EGMapRouter.swift in Sources */,
+				8C210FAE21445B5500834F21 /* EGMapPresenterProtocol.swift in Sources */,
+				8C210FBD21445DBC00834F21 /* EGLocationSettingInteractorProtocol.swift in Sources */,
 				8C25848021205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld in Sources */,
 				8C25847A21205C0000D79FCA /* EGMapViewController.swift in Sources */,
 				8C619F6921233D4000AF834E /* EGMarkers.swift in Sources */,
 				8C206B062129F98D0025ACA6 /* EGRouteInformation.swift in Sources */,
+				8C0558BD2141A84200FEEC8B /* EGMapConfigurator.swift in Sources */,
+				8C733C86213C708C002B47F7 /* EGMapPresenter.swift in Sources */,
+				8C210FC021445E0D00834F21 /* EGLocationSettingConfiguratorProtocol.swift in Sources */,
 				8C09D79C2128A1F40057AE6A /* EGRouteData.swift in Sources */,
+				8C210FB221445C0A00834F21 /* EGMapInteractorProtocol.swift in Sources */,
 				8C087FA421220C1D0070F555 /* EGSamplesPlaces.swift in Sources */,
+				8C733C8A213C7101002B47F7 /* EGLocationSettingInteractor.swift in Sources */,
 				8C532C6B212F23A600BE73EF /* EGAdressLocation.swift in Sources */,
+				8C210FB521445C6300834F21 /* EGMapConfiguratorProtocol.swift in Sources */,
 				8C619F6D2123535500AF834E /* EGServerManager.swift in Sources */,
+				8C733C88213C70EF002B47F7 /* EGLocationSettingPresenter.swift in Sources */,
+				8C733C8C213C7110002B47F7 /* EGLocationSettingRouter.swift in Sources */,
+				8C210FBA21445D7000834F21 /* EGLocationSettingPresenterProtocol.swift in Sources */,
+				8C733C84213C707A002B47F7 /* EGMapInteractor.swift in Sources */,
+				8C10C4212146FEB3009EDB8A /* DelegatedCall.swift in Sources */,
+				8C733C80213C7040002B47F7 /* EGMapRouterProtocol.swift in Sources */,
 				8C25847821205C0000D79FCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import GoogleMaps
+
+protocol EGMapInteractorProtocol: class {
+  func configure()
+  func buildRoute()
+  func cancelRoute()
+  func addMarker(_ marker: GMSMarker, andLocationType locationType: EGLocationType)
+  func saveRoute()
+}

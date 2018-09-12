@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import GoogleMaps
+
+protocol EGLocationSettingPresenterProtocol: class {
+  var router: EGLocationSettingRouterProtocol! { set get }
+  func startRecognizingText()
+  func cancelTextRecognition()
+  func closeSettingViewController()
+  func searchForPlace(byAddress address: String)
+  func selectMarker(byIndexPath indexPath: IndexPath,
+                               myLocation: CLLocationCoordinate2D?)
+}

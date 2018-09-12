@@ -23,6 +23,7 @@ class EGMapViewController: UIViewController {
   var presenter: EGMapPresenterProtocol!
   let configurator: EGMapConfiguratorProtocol = EGMapConfigurator()
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     configurator.configure(with: self)
@@ -69,7 +70,6 @@ extension EGMapViewController: GMSMapViewDelegate {
   func viewController(viewController: GMSAutocompleteViewController, didAutocompleteWithPlace place: GMSPlace) {
     dismiss(animated: true, completion: nil)
   }
-
 }
 
 // MARK: - UItextFieldDelegate
@@ -80,9 +80,11 @@ extension EGMapViewController: UITextFieldDelegate {
     informationView.isHidden = true
     switch textField.tag {
     case 0:
-      presenter.startLocationSettingViewController(withLocationType: .OriginLocationType)
+      presenter.startLocationSettingViewController(withLocationType:
+        .OriginLocationType)
     case 1:
-      presenter.startLocationSettingViewController(withLocationType: .DestinationLocationType)
+      presenter.startLocationSettingViewController(withLocationType:
+        .DestinationLocationType)
     default:
       break
     }

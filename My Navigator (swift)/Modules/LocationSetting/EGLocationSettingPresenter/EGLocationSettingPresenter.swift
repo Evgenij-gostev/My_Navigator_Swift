@@ -10,6 +10,7 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
+
 class EGLocationSettingPresenter: EGLocationSettingPresenterProtocol {
   
   var interactor: EGLocationSettingInteractorProtocol!
@@ -18,9 +19,8 @@ class EGLocationSettingPresenter: EGLocationSettingPresenterProtocol {
   
   // MARK: - Router Methods
 
-  
-  func searchForPlaceByAddress(_ address: String) {
-    interactor.searchForPlaceByAddress(address)
+  func searchForPlace(byAddress address: String) {
+    interactor.searchForPlace(byAddress: address)
   }
   
   // MARK: - Interactor Methods
@@ -30,10 +30,10 @@ class EGLocationSettingPresenter: EGLocationSettingPresenterProtocol {
     interactor.startRecognitionText()
   }
   
-  func selectMarkerByIndexPath(_ indexPath: IndexPath,
+  func selectMarker(byIndexPath indexPath: IndexPath,
                                myLocation: CLLocationCoordinate2D?) {
-    interactor.selectMarkerByIndexPath(indexPath,
-                                       myLocation: myLocation)
+    interactor.selectMarker(byIndexPath: indexPath,
+                             myLocation: myLocation)
   }
   
   func cancelTextRecognition() {

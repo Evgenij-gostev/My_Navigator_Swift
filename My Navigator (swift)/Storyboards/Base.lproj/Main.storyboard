@@ -171,6 +171,7 @@
                         <outlet property="informationRouteLabel" destination="qov-8A-9Pp" id="IIE-SP-3bt"/>
                         <outlet property="informationView" destination="kk2-cs-8VK" id="FTp-R5-6J1"/>
                         <outlet property="mapView" destination="TYM-2w-4D0" id="G59-BA-fa7"/>
+                        <outlet property="myLocationButton" destination="TWg-a4-zvV" id="c2a-AC-suX"/>
                         <outlet property="originTextField" destination="2Lp-Ir-CQM" id="hi2-P5-bVc"/>
                     </connections>
                 </viewController>
@@ -178,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
-        <!--Fetcher Sample View Controller-->
+        <!--Location Setting View Controller-->
         <scene sceneID="RsB-EM-QD6">
             <objects>
-                <viewController storyboardIdentifier="EGFetcherSampleViewController" id="lUb-D9-EfN" customClass="EGFetcherSampleViewController" customModule="My_Navigator__swift_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EGLocationSettingViewController" id="lUb-D9-EfN" customClass="EGLocationSettingViewController" customModule="My_Navigator__swift_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NZD-zU-Keu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +221,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tc-ZA-ULu">
-                                <rect key="frame" x="152" y="577" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="577" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="341-Pl-IMJ"/>
                                     <constraint firstAttribute="width" constant="70" id="DUv-a1-dv4"/>

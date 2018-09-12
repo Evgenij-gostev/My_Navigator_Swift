@@ -14,23 +14,21 @@ import GooglePlaces
 class EGMapInteractor: NSObject, EGMapInteractorProtocol {
   
   weak var presenter: EGMapPresenterProtocol!
-  
   private let _locationManager = CLLocationManager()
   private var _originLocation: CLLocationCoordinate2D?
   private var _destinationLocation: CLLocationCoordinate2D?
-//  private var _isMyLocationEnabled = false
-//  private var _isRouteBuilt = false
-//  private var _position: GMSCameraPosition?
   private var _originMarker: GMSMarker?
   private var _destinationMarker: GMSMarker?
   private var _polyline: GMSPolyline?
   private var _addressLocation: String?
   private var _distance: String?
   private var _duration: String?
-//  private var _place: GMSPlace?
+  private let _routeData = EGRouteData()
   
   required init(presenter: EGMapPresenterProtocol) {
+    super.init()
     self.presenter = presenter
+    loadRouteData()
   }
   
   func configure() {
@@ -42,10 +40,8 @@ class EGMapInteractor: NSObject, EGMapInteractorProtocol {
     establishOriginLocation()
     if let originLocation = _originLocation,
       let destinationLocation = _destinationLocation {
-      let routeData = EGRouteData()
-      routeData.delegate = self
-      routeData.routeDataFromServerAndTheRouteWith(origin: originLocation,
-                                                   andDestination: destinationLocation)
+      _routeData.routeDataFromServerAndTheRoute(withOrigin: originLocation,
+                                            andDestination: destinationLocation)
     }
   }
   
@@ -78,7 +74,10 @@ class EGMapInteractor: NSObject, EGMapInteractorProtocol {
     }
     presenter.router.scalingLocation(marker.position, andZoom: 15)
     if CLLocation.EGLocationNoNullCoordinate(location: _originLocation) && CLLocation.EGLocationNoNullCoordinate(location: _destinationLocation) {
-      presenter.showSimpleAlertWithMessege("Построить маршрут?", isOneButton: false)
+      DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        self.presenter.showSimpleAlert(withMessege: "Построить маршрут?",
+                                       isOneButton: false)
+      }
     }
   }
 
@@ -105,9 +104,27 @@ class EGMapInteractor: NSObject, EGMapInteractorProtocol {
     establishOriginLocation()
     let bounds = GMSCoordinateBounds.init(path: (_polyline?.path)!)
     presenter.router.showTheWholeRoute(forBounds: bounds)
-    presenter.router.loadInformationView(duration: _duration, distance: _distance)
+    presenter.router.loadInformationView(withDuration: _duration,
+                                          andDistance: _distance)
   }
 
+  // MARK: - EGRouteDataDelegate
+  
+  private func loadRouteData() {
+    _routeData.delegateCall.delegate(to: self) { (self, arg1) in
+      let (polyline, distance, duration, messageError) = arg1
+      if let polyline = polyline {
+        self._distance = distance
+        self._duration = duration
+        self._polyline = polyline
+        self.presenter.router.addPolylineToMapView(self._polyline)
+        self.loadInformationViewAndScaling()
+      } else {
+        self.presenter.showSimpleAlert(withMessege: messageError!,
+                                       isOneButton: true)
+      }
+    }
+  }
 }
 
 // MARK: - CLLocationManagerDelegate
@@ -117,7 +134,6 @@ extension EGMapInteractor: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
     if status == .authorizedWhenInUse {
       _locationManager.startUpdatingLocation()
-      //      mapView.isMyLocationEnabled = true
     }
   }
   
@@ -138,25 +154,8 @@ extension EGMapInteractor: CLLocationManagerDelegate {
 // MARK: - EGLocationSettingViewControllerDelegate
 
 extension EGMapInteractor: EGLocationSettingViewControllerDelegate {
-  func autocompleteWithMarker(_ marker: GMSMarker,
+  func autocomplete(withMarker marker: GMSMarker,
                               andLocationType locationType: EGLocationType) {
     addMarker(marker, andLocationType: locationType)
   }
 }
-
-// MARK: - EGRouteDataDelegate
-
-extension EGMapInteractor: EGRouteDataDelegate {
-  func getRouteDataWithPolyline(_ polyline: GMSPolyline?, distance: String?, duration: String?, messageError: String?) {
-    if let polyline = polyline {
-      _distance = distance
-      _duration = duration
-      _polyline = polyline
-      presenter.router.addPolylineToMapView(_polyline)
-      loadInformationViewAndScaling()
-    } else {
-      presenter.showSimpleAlertWithMessege(messageError!, isOneButton: true)
-    }
-  }
-}
-

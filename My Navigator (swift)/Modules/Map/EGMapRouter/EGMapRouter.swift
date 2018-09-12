@@ -10,12 +10,13 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
+
 class EGMapRouter: EGMapRouterProtocol {
 
   weak var viewController: EGMapViewController!
-//  private let _locationManager = CLLocationManager()
   var position: GMSCameraPosition?
   var isMyLocationEnabled = false
+  
   
   init(viewController: EGMapViewController) {
     self.viewController = viewController
@@ -30,11 +31,9 @@ class EGMapRouter: EGMapRouterProtocol {
     viewController.informationView.layer.shadowRadius = 4.0
     loadMapView()
     if !isMyLocationEnabled {
-      viewController.myLocationButton.isHidden = true
       let startLocation = CLLocationCoordinate2DMake(0, 10)
       scalingLocation(startLocation, andZoom: 1)
     }
-    
   }
   
   func establishOriginTextField(_ text: String?) {
@@ -63,12 +62,7 @@ class EGMapRouter: EGMapRouterProtocol {
     let camera = GMSCameraPosition.camera(withTarget: location, zoom: zoom)
     viewController.mapView.camera = camera
   }
-  
-//  func locationManager(_ manager: CLLocationManager) {
-//    _locationManager.startUpdatingLocation()
-//    viewController.mapView.isMyLocationEnabled = true
-//  }
-  
+
   func presentController(_ controller: UIViewController) {
     viewController.present(controller, animated: true, completion: nil)
   }
@@ -81,7 +75,8 @@ class EGMapRouter: EGMapRouterProtocol {
     polyline?.map = viewController.mapView
   }
   
-  func loadInformationView(duration: String?, distance: String?) {
+  func loadInformationView(withDuration duration: String?,
+                            andDistance distance: String?) {
     viewController.informationRouteLabel.text = "\(duration!) (\(distance!))"
     viewController.informationView.isHidden = false
     UIView.transition(with: viewController.informationView,

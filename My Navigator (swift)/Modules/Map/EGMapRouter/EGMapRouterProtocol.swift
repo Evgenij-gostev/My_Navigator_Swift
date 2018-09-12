@@ -8,13 +8,6 @@
 
 import Foundation
 import GoogleMaps
-//import GooglePlaces
-
-
-
-
-
-
 
 protocol EGMapRouterProtocol: class {
   var position: GMSCameraPosition? { set get }
@@ -28,6 +21,7 @@ protocol EGMapRouterProtocol: class {
   func presentController(_ controller: UIViewController)
   func addMarkerToMapView(_ marker: GMSMarker)
   func addPolylineToMapView(_ polyline: GMSPolyline?)
-  func loadInformationView(duration: String?, distance: String?)
+  func loadInformationView(withDuration duration: String?,
+                            andDistance distance: String?)
   func showTheWholeRoute(forBounds bounds: GMSCoordinateBounds)
 }
