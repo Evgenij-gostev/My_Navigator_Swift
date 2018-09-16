@@ -18,4 +18,5 @@ protocol EGMapPresenterProtocol: class {
   func choiceOfLocation(_ coordinate: CLLocationCoordinate2D)
   func showSimpleAlert(withMessege message: String, isOneButton: Bool)
   func startLocationSettingViewController(withLocationType locationType: EGLocationType)
+  func startQueryHistoryViewController()
 }

@@ -36,12 +36,7 @@ class EGMarkers {
       _marker?.snippet = "Мое местоположение"
     } else {
       _marker = GMSMarker.init(position: place!.coordinate)
-      let arrayString = place?.formattedAddress?.components(separatedBy: ", ")
-      var address = ""
-      for string in arrayString! {
-        address += "\(string), \n"
-      }
-      _marker?.snippet = address
+      _marker?.snippet = place?.formattedAddress
     }
   }
   

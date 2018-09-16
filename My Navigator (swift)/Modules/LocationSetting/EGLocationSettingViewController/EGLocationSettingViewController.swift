@@ -104,7 +104,6 @@ extension EGLocationSettingViewController: UITableViewDataSource {
     }
     return cell!
   }
-
 }
 
 // MARK: - UITableViewDelegate

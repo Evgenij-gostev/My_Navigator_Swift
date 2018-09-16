@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 import GoogleMaps
 import GooglePlaces
 
@@ -50,7 +51,8 @@ class EGMapInteractor: NSObject, EGMapInteractorProtocol {
   }
   
   func saveRoute() {
-    
+    EGCoreData.shared.saveRoute(withOriginMarker: _originMarker,
+                                andDestinationMarker: _destinationMarker)
   }
 
 // MARK: - Private Methods
@@ -157,5 +159,17 @@ extension EGMapInteractor: EGLocationSettingViewControllerDelegate {
   func autocomplete(withMarker marker: GMSMarker,
                               andLocationType locationType: EGLocationType) {
     addMarker(marker, andLocationType: locationType)
+  }
+}
+
+// MARK: - EGQueryHistoryViewControllerDelegate
+
+extension EGMapInteractor: EGQueryHistoryViewControllerDelegate {
+  func loadingQueryHistoryWithOriginMarker(_ originMarker: GMSMarker,
+                   andDestinationMarker destinationMarker: GMSMarker) {
+    cancelRoute()
+    addOriginMarker(originMarker)
+    addDestinationMarker(destinationMarker)
+    buildRoute()
   }
 }

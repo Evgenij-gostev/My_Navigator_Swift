@@ -83,4 +83,12 @@ class EGMapPresenter: EGMapPresenterProtocol {
     router.presentController(locationSettingVC)
     locationSettingVC.delegate = interactor.self as? EGLocationSettingViewControllerDelegate
   }
+  
+  func startQueryHistoryViewController() {
+    let queryHistoryVC: EGQueryHistoryViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EGQueryHistoryViewController") as! EGQueryHistoryViewController
+    queryHistoryVC.modalTransitionStyle = .crossDissolve
+    queryHistoryVC.modalPresentationStyle = .custom
+    router.presentController(queryHistoryVC)
+    queryHistoryVC.delegate = interactor.self as? EGQueryHistoryViewControllerDelegate
+  }
 }

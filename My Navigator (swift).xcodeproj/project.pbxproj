@@ -12,7 +12,16 @@
 		8C08C7EB213EF50700F61B6A /* EGLocationSettingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C7EA213EF50700F61B6A /* EGLocationSettingConfigurator.swift */; };
 		8C09D796212854F60057AE6A /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C09D795212854F60057AE6A /* CLLocation.swift */; };
 		8C09D79C2128A1F40057AE6A /* EGRouteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C09D79B2128A1F40057AE6A /* EGRouteData.swift */; };
+		8C0A3E23214AF8DD00DF4011 /* EGQueryHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A3E22214AF8DD00DF4011 /* EGQueryHistoryViewController.swift */; };
 		8C10C4212146FEB3009EDB8A /* DelegatedCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10C4202146FEB3009EDB8A /* DelegatedCall.swift */; };
+		8C1C82E3214ED60F00792A88 /* EGQueryHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C82E2214ED60F00792A88 /* EGQueryHistoryPresenter.swift */; };
+		8C1C82E5214ED61E00792A88 /* EGQueryHistoryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C82E4214ED61E00792A88 /* EGQueryHistoryPresenterProtocol.swift */; };
+		8C1C82E7214ED63800792A88 /* EGQueryHistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C82E6214ED63800792A88 /* EGQueryHistoryInteractor.swift */; };
+		8C1C82E9214ED64400792A88 /* EGQueryHistoryInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C82E8214ED64400792A88 /* EGQueryHistoryInteractorProtocol.swift */; };
+		8C1C82EB214ED65800792A88 /* EGQueryHistoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C82EA214ED65800792A88 /* EGQueryHistoryConfigurator.swift */; };
+		8C1C82ED214ED66400792A88 /* EGQueryHistoryConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C82EC214ED66400792A88 /* EGQueryHistoryConfiguratorProtocol.swift */; };
+		8C1C82EF214ED68A00792A88 /* EGQueryHistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C82EE214ED68A00792A88 /* EGQueryHistoryRouter.swift */; };
+		8C1C82F1214ED69800792A88 /* EGQueryHistoryRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C82F0214ED69800792A88 /* EGQueryHistoryRouterProtocol.swift */; };
 		8C206B062129F98D0025ACA6 /* EGRouteInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */; };
 		8C210FAE21445B5500834F21 /* EGMapPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C210FAD21445B5500834F21 /* EGMapPresenterProtocol.swift */; };
 		8C210FB221445C0A00834F21 /* EGMapInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C210FB121445C0A00834F21 /* EGMapInteractorProtocol.swift */; };
@@ -27,6 +36,7 @@
 		8C25848521205C0600D79FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C25848321205C0600D79FCA /* LaunchScreen.storyboard */; };
 		8C25848D2120B47800D79FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C25848C2120B47800D79FCA /* Assets.xcassets */; };
 		8C2584902120C2E000D79FCA /* EGLocationSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25848F2120C2E000D79FCA /* EGLocationSettingViewController.swift */; };
+		8C3A9FB1214D8B6D0061FEBA /* EGCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3A9FB0214D8B6D0061FEBA /* EGCoreData.swift */; };
 		8C532C6B212F23A600BE73EF /* EGAdressLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */; };
 		8C619F6921233D4000AF834E /* EGMarkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C619F6821233D4000AF834E /* EGMarkers.swift */; };
 		8C619F6D2123535500AF834E /* EGServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C619F6C2123535500AF834E /* EGServerManager.swift */; };
@@ -48,7 +58,16 @@
 		8C08C7EA213EF50700F61B6A /* EGLocationSettingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingConfigurator.swift; sourceTree = "<group>"; };
 		8C09D795212854F60057AE6A /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
 		8C09D79B2128A1F40057AE6A /* EGRouteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGRouteData.swift; sourceTree = "<group>"; };
+		8C0A3E22214AF8DD00DF4011 /* EGQueryHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryViewController.swift; sourceTree = "<group>"; };
 		8C10C4202146FEB3009EDB8A /* DelegatedCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatedCall.swift; sourceTree = "<group>"; };
+		8C1C82E2214ED60F00792A88 /* EGQueryHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryPresenter.swift; sourceTree = "<group>"; };
+		8C1C82E4214ED61E00792A88 /* EGQueryHistoryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryPresenterProtocol.swift; sourceTree = "<group>"; };
+		8C1C82E6214ED63800792A88 /* EGQueryHistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryInteractor.swift; sourceTree = "<group>"; };
+		8C1C82E8214ED64400792A88 /* EGQueryHistoryInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryInteractorProtocol.swift; sourceTree = "<group>"; };
+		8C1C82EA214ED65800792A88 /* EGQueryHistoryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryConfigurator.swift; sourceTree = "<group>"; };
+		8C1C82EC214ED66400792A88 /* EGQueryHistoryConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		8C1C82EE214ED68A00792A88 /* EGQueryHistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryRouter.swift; sourceTree = "<group>"; };
+		8C1C82F0214ED69800792A88 /* EGQueryHistoryRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGQueryHistoryRouterProtocol.swift; sourceTree = "<group>"; };
 		8C206B052129F98D0025ACA6 /* EGRouteInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGRouteInformation.swift; sourceTree = "<group>"; };
 		8C210FAD21445B5500834F21 /* EGMapPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapPresenterProtocol.swift; sourceTree = "<group>"; };
 		8C210FB121445C0A00834F21 /* EGMapInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMapInteractorProtocol.swift; sourceTree = "<group>"; };
@@ -65,6 +84,7 @@
 		8C25848621205C0600D79FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C25848C2120B47800D79FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C25848F2120C2E000D79FCA /* EGLocationSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGLocationSettingViewController.swift; sourceTree = "<group>"; };
+		8C3A9FB0214D8B6D0061FEBA /* EGCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGCoreData.swift; sourceTree = "<group>"; };
 		8C532C6A212F23A600BE73EF /* EGAdressLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGAdressLocation.swift; sourceTree = "<group>"; };
 		8C619F6821233D4000AF834E /* EGMarkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGMarkers.swift; sourceTree = "<group>"; };
 		8C619F6C2123535500AF834E /* EGServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGServerManager.swift; sourceTree = "<group>"; };
@@ -99,6 +119,62 @@
 				965C220A3F338E052BD13B06 /* Pods-My Navigator (swift).release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C0A3E20214AF70E00DF4011 /* QueryHistory */ = {
+			isa = PBXGroup;
+			children = (
+				8C0A3E21214AF7C100DF4011 /* EGQueryHistoryViewController */,
+				8C1C82DE214ED43D00792A88 /* EGQueryHistoryPresenter */,
+				8C1C82DF214ED44B00792A88 /* EGQueryHistoryInteractor */,
+				8C1C82E0214ED48900792A88 /* EGQueryHistoryConfigurator */,
+				8C1C82E1214ED4A500792A88 /* EGQueryHistoryRouter */,
+			);
+			path = QueryHistory;
+			sourceTree = "<group>";
+		};
+		8C0A3E21214AF7C100DF4011 /* EGQueryHistoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C0A3E22214AF8DD00DF4011 /* EGQueryHistoryViewController.swift */,
+			);
+			path = EGQueryHistoryViewController;
+			sourceTree = "<group>";
+		};
+		8C1C82DE214ED43D00792A88 /* EGQueryHistoryPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C1C82E4214ED61E00792A88 /* EGQueryHistoryPresenterProtocol.swift */,
+				8C1C82E2214ED60F00792A88 /* EGQueryHistoryPresenter.swift */,
+			);
+			path = EGQueryHistoryPresenter;
+			sourceTree = "<group>";
+		};
+		8C1C82DF214ED44B00792A88 /* EGQueryHistoryInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				8C1C82E8214ED64400792A88 /* EGQueryHistoryInteractorProtocol.swift */,
+				8C1C82E6214ED63800792A88 /* EGQueryHistoryInteractor.swift */,
+			);
+			path = EGQueryHistoryInteractor;
+			sourceTree = "<group>";
+		};
+		8C1C82E0214ED48900792A88 /* EGQueryHistoryConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				8C1C82EC214ED66400792A88 /* EGQueryHistoryConfiguratorProtocol.swift */,
+				8C1C82EA214ED65800792A88 /* EGQueryHistoryConfigurator.swift */,
+			);
+			path = EGQueryHistoryConfigurator;
+			sourceTree = "<group>";
+		};
+		8C1C82E1214ED4A500792A88 /* EGQueryHistoryRouter */ = {
+			isa = PBXGroup;
+			children = (
+				8C1C82F0214ED69800792A88 /* EGQueryHistoryRouterProtocol.swift */,
+				8C1C82EE214ED68A00792A88 /* EGQueryHistoryRouter.swift */,
+			);
+			path = EGQueryHistoryRouter;
 			sourceTree = "<group>";
 		};
 		8C210FAC21445B1D00834F21 /* EGMapViewController */ = {
@@ -216,11 +292,20 @@
 				8C69170C213DCBCA004D3A4F /* Services */,
 				8C691709213DC9E1004D3A4F /* Extensions */,
 				8C733C7E213C6F3A002B47F7 /* Storyboards */,
+				8C3A9FAF214D4AAB0061FEBA /* CoreData */,
 				8C25848C2120B47800D79FCA /* Assets.xcassets */,
 				8C25848621205C0600D79FCA /* Info.plist */,
-				8C25847E21205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld */,
 			);
 			path = "My Navigator (swift)";
+			sourceTree = "<group>";
+		};
+		8C3A9FAF214D4AAB0061FEBA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8C3A9FB0214D8B6D0061FEBA /* EGCoreData.swift */,
+				8C25847E21205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		8C691709213DC9E1004D3A4F /* Extensions */ = {
@@ -244,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				8C733C7C213C6D2E002B47F7 /* Map */,
+				8C0A3E20214AF70E00DF4011 /* QueryHistory */,
 				8C733C7D213C6ECC002B47F7 /* LocationSetting */,
 			);
 			path = Modules;
@@ -438,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1C82ED214ED66400792A88 /* EGQueryHistoryConfiguratorProtocol.swift in Sources */,
 				8C08C7EB213EF50700F61B6A /* EGLocationSettingConfigurator.swift in Sources */,
 				8C733C8E213C712B002B47F7 /* EGLocationSettingRouterProtocol.swift in Sources */,
 				8C09D796212854F60057AE6A /* CLLocation.swift in Sources */,
@@ -446,16 +533,24 @@
 				8C210FAE21445B5500834F21 /* EGMapPresenterProtocol.swift in Sources */,
 				8C210FBD21445DBC00834F21 /* EGLocationSettingInteractorProtocol.swift in Sources */,
 				8C25848021205C0000D79FCA /* My_Navigator__swift_.xcdatamodeld in Sources */,
+				8C1C82E7214ED63800792A88 /* EGQueryHistoryInteractor.swift in Sources */,
 				8C25847A21205C0000D79FCA /* EGMapViewController.swift in Sources */,
 				8C619F6921233D4000AF834E /* EGMarkers.swift in Sources */,
 				8C206B062129F98D0025ACA6 /* EGRouteInformation.swift in Sources */,
 				8C0558BD2141A84200FEEC8B /* EGMapConfigurator.swift in Sources */,
 				8C733C86213C708C002B47F7 /* EGMapPresenter.swift in Sources */,
+				8C1C82E9214ED64400792A88 /* EGQueryHistoryInteractorProtocol.swift in Sources */,
+				8C1C82EB214ED65800792A88 /* EGQueryHistoryConfigurator.swift in Sources */,
 				8C210FC021445E0D00834F21 /* EGLocationSettingConfiguratorProtocol.swift in Sources */,
+				8C3A9FB1214D8B6D0061FEBA /* EGCoreData.swift in Sources */,
 				8C09D79C2128A1F40057AE6A /* EGRouteData.swift in Sources */,
+				8C1C82E3214ED60F00792A88 /* EGQueryHistoryPresenter.swift in Sources */,
 				8C210FB221445C0A00834F21 /* EGMapInteractorProtocol.swift in Sources */,
 				8C087FA421220C1D0070F555 /* EGSamplesPlaces.swift in Sources */,
+				8C0A3E23214AF8DD00DF4011 /* EGQueryHistoryViewController.swift in Sources */,
+				8C1C82F1214ED69800792A88 /* EGQueryHistoryRouterProtocol.swift in Sources */,
 				8C733C8A213C7101002B47F7 /* EGLocationSettingInteractor.swift in Sources */,
+				8C1C82EF214ED68A00792A88 /* EGQueryHistoryRouter.swift in Sources */,
 				8C532C6B212F23A600BE73EF /* EGAdressLocation.swift in Sources */,
 				8C210FB521445C6300834F21 /* EGMapConfiguratorProtocol.swift in Sources */,
 				8C619F6D2123535500AF834E /* EGServerManager.swift in Sources */,
@@ -465,6 +560,7 @@
 				8C733C84213C707A002B47F7 /* EGMapInteractor.swift in Sources */,
 				8C10C4212146FEB3009EDB8A /* DelegatedCall.swift in Sources */,
 				8C733C80213C7040002B47F7 /* EGMapRouterProtocol.swift in Sources */,
+				8C1C82E5214ED61E00792A88 /* EGQueryHistoryPresenterProtocol.swift in Sources */,
 				8C25847821205C0000D79FCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

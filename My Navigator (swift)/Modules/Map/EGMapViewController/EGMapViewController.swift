@@ -51,7 +51,7 @@ class EGMapViewController: UIViewController {
   }
   
   @IBAction func actionRouteHistory(_ sender: UIButton) {
-
+    presenter.startQueryHistoryViewController()
   }
 }
 
